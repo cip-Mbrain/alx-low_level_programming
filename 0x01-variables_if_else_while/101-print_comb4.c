@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	int 1, j, k;
+	int i, j, k;
 
 	for (i = '0'; i <= '9'; i++)
 	{
@@ -19,7 +19,7 @@ int main(void)
 		{
 			for (k = '0'; k <= '9'; k++)
 			{
-				if ((i < j0 & (j < k) & (k <= '9'))
+				if ((i < j) & (j < k) & (k <= '9'))
 				{
 					putchar(i);
 					putchar(j);
