@@ -1,23 +1,29 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 /**
- * main - print 0-9 separated with commas, using putchar
- * Return: Always 0 (Success)
+ * main - writes 0-9
+ * @void: Empty parameter list for main.
+ *
+ * Description: Writes 0-9 with comma and space
+ *
+ * Return: 0 for success
  */
 
 int main(void)
 {
-	int n = '0';
+	int num = 48;
 
-	while (n <= '9')
+	while (num < 58)
 	{
-		putchar(n);
-		if (n != '9')
+		putchar(num);
+		if (num < 57)
 		{
 			putchar(',');
-			putchar(',');
+			putchar(' ');
 		}
-		n++;
+		num++;
 	}
 	putchar('\n');
 	return (0);
