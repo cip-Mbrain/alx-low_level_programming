@@ -1,18 +1,32 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 /**
- * main - print alpha reversed using putchar
- * Return: Always 0 (Success)
+ * main - Prints base 16
+ * @void: Empty parameter list for main.
+ *
+ * Description: Prints all hexadecimals
+ *
+ * Return: 0 for success
  */
 
 int main(void)
 {
-	char alpha = 'z';
+	int num = 48;
 
-	while (alpha >= 'a')
+	while (num <= 57)
 	{
-		putchar(alpha);
-		alpha--;
+		putchar(num);
+		num++;
+	}
+
+	num = 97;
+
+	while (num <= 102)
+	{
+		putchar(num);
+		num++;
 	}
 	putchar('\n');
 	return (0);
