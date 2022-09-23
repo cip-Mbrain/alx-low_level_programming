@@ -1,0 +1,4 @@
+!#/bin/bash
+git add .
+git commit -m "all in one"
+git push
